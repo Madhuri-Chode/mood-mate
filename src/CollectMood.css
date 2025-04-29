@@ -1,0 +1,13 @@
+.imageRegular{
+    width:40px;
+     height:40px;
+     margin:10px;
+     padding: 5px;
+}
+.selected{
+    padding: 5px;
+    width:40px;
+     height:40px;
+     margin:10px;
+     background-color: #328E6E;
+}

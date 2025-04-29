@@ -1,0 +1,68 @@
+
+.container{
+    margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  
+  background: linear-gradient(to bottom, #328E6E, #67AE6E);
+  border-radius: 10px;
+
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap:20px;
+   
+}
+.note{
+    margin: 10px;
+    background-color: #E1EEBC;
+    height: 180px;
+    border-radius: 20px;
+    
+    
+}
+.notecontainer{
+    
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.firstRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+img{
+    width: 35px;
+    height: 35px;
+    flex: 1;
+
+}
+.secondRow{
+    display: flex;
+    flex-direction: row;
+   
+}
+.temp{
+    width: fit-content;
+    
+    flex: 1;
+}
+
+.userDate{
+    flex: 1;
+}
+.delete{
+    margin-left: 300px;
+    width: 30px;
+    height: 30px;
+}
+.titlee{
+    margin-left: 350px;
+    color: white;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
