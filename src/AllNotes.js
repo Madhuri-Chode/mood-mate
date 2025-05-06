@@ -17,8 +17,8 @@ export default function AllNotes({moods,setMoods}){
         localStorage.setItem("moods",JSON.stringify({...newMood}));
     }
     return(
-        <>
-            <h1 className="titlee" >All Notes</h1>
+        
+        <> <h1 className="titlee" >All Notes</h1>
             <div className="container">
                 {Object.keys(moods).map((date)=>
                     <div className="note" key={date}>
@@ -44,6 +44,8 @@ export default function AllNotes({moods,setMoods}){
                     </div>
                 )}
             </div>
-        </>
+        </> 
+        
+            
     );
 }

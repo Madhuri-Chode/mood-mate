@@ -62,7 +62,7 @@ function App() {
         <div className='collectmood'><CollectMood moods={moods} setMoods={setMoods} temp={temp} icon={icon}/></div>
         <div className='calenderView'><Calenderview moods={moods}/></div>
         </div>
-        
+       {Object.keys(moods).length >0 ? <div>
           <div className='utils'>
             <div> <img className='utils-img'  src={notes} alt='shownotes' onClick={()=>setShowNotes(true)}/></div>
             <div><img className='utils-img' src={growth} alt='showgraph' onClick={()=>setShowNotes(false)}/></div>
@@ -71,8 +71,9 @@ function App() {
           </div>
         
           <div>
-          {showNotes ? <AllNotes icon={icon} moods={moods} setMoods={setMoods}/> : <Chart moods={moods}/>} 
+          {showNotes ? <AllNotes icon={icon} moods={moods} setMoods={setMoods}/> :  <Chart moods={moods}/>} 
       </div>
+      </div> : null}
         </div>
           
         
